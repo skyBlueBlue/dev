@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: 0.16rem;
+  background: #f3f3fe; }
+
+.wrap {
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  width: 100%;
+  height: 1.08rem;
+  border-bottom: #f0f0fe 0.01rem solid;
+  background: #fff; }
+  .header ul {
+    display: flex; }
+    .header ul li {
+      flex: 1;
+      text-align: center;
+      line-height: 1.08rem;
+      color: #9f9f9f;
+      font-size: 0.29rem; }
+      .header ul li.show {
+        color: #4e6ff5;
+        position: relative; }
+        .header ul li.show.show:after {
+          content: "";
+          width: 1.24rem;
+          height: 0.02rem;
+          position: absolute;
+          bottom: 0;
+          left: 0.7rem;
+          background: #4e6ff5; }
+
+.main {
+  flex: 1;
+  overflow: auto;
+  margin-top: 0.2rem;
+  background: #fff;
+  padding: 0 0.48rem; }
+  .main ul {
+    width: 100%;
+    height: 2.2rem;
+    border-radius: 0.1rem;
+    box-shadow: 1px 0 0 1px #d8d8d8;
+    margin-top: 0.25rem; }
+  .main li {
+    width: 100%; }
+  .main li:first-child {
+    height: 1.33rem;
+    background: #fd6060;
+    position: relative; }
+    .main li:first-child img {
+      position: absolute;
+      width: 0.4rem;
+      height: 0.46rem;
+      top: 0.23rem;
+      left: 0.43rem; }
+    .main li:first-child b {
+      position: absolute;
+      font-size: 0.88rem;
+      left: 1.17rem;
+      color: #fff; }
+    .main li:first-child span {
+      position: absolute;
+      right: 0.24rem;
+      bottom: 0.17rem;
+      color: #fff;
+      font-size: 0.48rem; }
+  .main li:nth-child(2), .main li:last-child {
+    padding-left: 0.40rem; }
+    .main li:nth-child(2) b, .main li:last-child b {
+      background: url(../images/b.png) no-repeat;
+      background-position: 0 0;
+      display: inline-block;
+      width: 0.30rem;
+      height: 0.31rem; }
+    .main li:nth-child(2) b.on, .main li:last-child b.on {
+      background-position: 0 -0.80rem; }
+  .main li:nth-child(2) span {
+    color: #00a45c; }
+  .main li:last-child span {
+    color: #aaa; }
+
+/*# sourceMappingURL=style.css.map */
